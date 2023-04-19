@@ -55,7 +55,7 @@ questions = [
 
 # функция-обработчик команды /start
 def start(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Привет! Я бот с тестом на знание Python. Напиши /test, чтобы начать.")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Привет! Я бот с тестом на знание Конституции РФ. Напиши /test, чтобы начать.")
 
 # функция-обработчик команды /test
 def test(update, context):
