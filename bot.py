@@ -97,7 +97,7 @@ def end_test(update, context):
     score = context.user_data['score']
     total = len(questions)
     context.bot.send_message(chat_id=update.effective_chat.id, text=f"Тест завершен! Ваш результат: {score}/{total}")
-updater = Updater(token='5570131863:AAHImpvb7BzSWD7cldcv9dGXqBETcpzDGZM', use_context=True)
+updater = Updater(token='Your token', use_context=True)
 updater.dispatcher.add_handler(CommandHandler('start', start))
 updater.dispatcher.add_handler(CommandHandler('test', test))
 updater.dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, message))
